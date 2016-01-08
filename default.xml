@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="github"
+           fetch=".." />
+
+	<remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-5.1.1_r33" />
+
+	<default revision="refs/heads/TW-5.1.1"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <!--<project path="build" name="TW-LL-msm8226/TW_build" >
+    <copyfile src="build_rom.sh" dest="build_rom.sh" />
+  </project>-->
+
+  <project path="manifest" name="TW-LL-msm8226/manifest" />
+  <project path="s5_mini_port" name="TW-LL-msm8226/ROM" />
+  <project path="kernel/ms013g" name="TW-LL-msm8226/samsung_ms013g_SWA" />
+  <project path="kernel/s3ve3g" name="TW-LL-msm8226/samsung_s3ve3g_EUR" />
+  <!--<project path="kernel/ms01lte" name="TW-LL-msm8226/samsung_ms01lte_EUR" />-->
+  <project path="tools/gcc" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" />
+  <project path="tools/mkbootimg" name="xiaolu/mkbootimg_tools" revision="master" />
+  <project path="ramdisk" name="TW-LL-msm8226/ramdisk_kmini3g" />
+  <project path="readme" name="TW-LL-msm8226/Readme" />
+</manifest>
