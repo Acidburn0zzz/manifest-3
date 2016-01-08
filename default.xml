@@ -22,7 +22,7 @@
   <project path="tools/mkbootimg" name="xiaolu/mkbootimg_tools" revision="master" />
   <project path="ramdisk" name="TW-LL-msm8226/ramdisk_kmini3g" />
   <project path="readme" name="TW-LL-msm8226/Readme" >
-    <symlink src="build_rom.sh" dest="build_rom.sh" />
+    <copyfile src="build_rom.sh" dest="build_rom.sh" />
   </project>
 
 </manifest>
