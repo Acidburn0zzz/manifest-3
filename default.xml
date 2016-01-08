@@ -22,7 +22,7 @@
   <project path="kernel/ms013g" name="TW-LL-msm8226/samsung_ms013g_SWA" />
   <project path="kernel/s3ve3g" name="TW-LL-msm8226/samsung_s3ve3g_EUR" />
   <!--<project path="kernel/ms01lte" name="TW-LL-msm8226/samsung_ms01lte_EUR" />-->
-  <project path="tools/gcc" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" />
+  <project path="tools/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" />
   <project path="tools/mkbootimg" name="xiaolu/mkbootimg_tools" revision="master" />
   <project path="ramdisk" name="TW-LL-msm8226/ramdisk_kmini3g" />
   <project path="readme" name="TW-LL-msm8226/Readme" />
