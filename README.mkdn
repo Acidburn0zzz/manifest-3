@@ -1,0 +1,15 @@
+TouchWiz Lollipop MSM8226
+=========================
+
+
+Getting Started
+---------------
+
+To initialize your local repository using the TW-LL-MSM8226 trees, use a command like this:
+
+    repo init -u git://github.com/TW-LL-msm8226/manifest.git -b TW-5.1.1
+
+Then to sync up:
+
+    repo sync
+
