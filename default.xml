@@ -13,10 +13,6 @@
            sync-c="true"
            sync-j="4" />
 
-  <!--<project path="build" name="TW-LL-msm8226/TW_build" >
-    <copyfile src="build_rom.sh" dest="build_rom.sh" />
-  </project>-->
-
   <project path="manifest" name="TW-LL-msm8226/manifest" />
   <project path="s5_mini_port" name="TW-LL-msm8226/ROM" />
   <project path="kernel/ms013g" name="TW-LL-msm8226/samsung_ms013g_SWA" />
@@ -25,5 +21,8 @@
   <project path="tools/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" />
   <project path="tools/mkbootimg" name="xiaolu/mkbootimg_tools" revision="master" />
   <project path="ramdisk" name="TW-LL-msm8226/ramdisk_kmini3g" />
-  <project path="readme" name="TW-LL-msm8226/Readme" />
+  <project path="readme" name="TW-LL-msm8226/Readme" >
+    <symlink src="build_rom.sh" dest="build_rom.sh" />
+  </project>
+
 </manifest>
